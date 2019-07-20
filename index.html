@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>原生js实现页码插件</title>
+
+     <!--  -->
+     <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+       <div class="pager">
+
+       </div> 
+
+
+       <script src="index.js"></script>
+       <script type="text/javascript"> 
+
+            var pager = new Pager({
+                total: 1000,
+                // 页码回调函数
+                PageChange:function (page) {
+                    console.log(`加载第` + page + "页的数据");
+                }    
+
+            });
+       </script> 
+
+</body>
+</html>

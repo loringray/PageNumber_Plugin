@@ -1,0 +1,29 @@
+.pager{
+    text-align: center;
+}
+.pager .pagerItem{
+    display: inline-block;
+    margin: 8px;
+    margin-top: 200px;
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: rgb(95, 95, 230);
+}
+.pager .pagerItem.disabled{
+    color: #ccc;
+    cursor: not-allowed;
+}
+.pager .pagerItem.active{
+    color: #f40;
+    border: none;
+    cursor: auto;
+}
+.pager .number{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.pager .pagerText{
+    color: rgba(255, 0, 85, 0.514);
+    font-weight: bold;
+}
